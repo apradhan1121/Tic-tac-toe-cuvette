@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #8CC461;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px;
+    align-items: center;
+    
+}
+.content-items p{
+    font-size: 1.5em;
+}
+.score-container{
+    display: flex;
+    border: 2px solid white;
+    width: 30em;
+    justify-content: space-between;
+    margin-bottom: 5em;
+    height: 8em;
+    padding: 1em;
+    border-radius: 1em;
+   
+}   
+.score-board{
+    display: flex;
+    justify-content: space-between  ;
+
+}
+.score-board p{
+    font-size: 1em;
+}
+.score-board div{
+    border-radius: 1em;
+}
+#c-score{
+    margin: auto;
+}
+.computer{
+    border: 1px solid black;
+    text-align: center;
+    width: 7em;
+    margin: 6px;
+    padding: 10px;
+    background-color: white;
+}
+.your-score{
+    display: inline;
+    border: 1px solid black;
+    text-align: center;
+    width: 7em;
+    margin: 6px;
+    padding: 10px;
+    background-color: white;
+}
+.rock-image{
+    border: 1px solid black;
+    display: inline-block;
+    border-radius: 50%;
+    padding: 15px;
+    margin-right: 2em;
+    margin-left: 2em;
+    background-color: #0074B6;
+}
+.scissor-image{
+    border: 1px solid black;
+    display: inline-block;
+    border-radius: 50%;
+    padding: 15px;
+    background-color:#BD00FF;
+}
+.paper-image{
+    border: 1px solid black;
+    display: inline-block;
+    border-radius: 50%;
+    padding: 15px;
+    margin-left: 1.5em;
+    background-color: #FFA943;
+}
+.item-images{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.item-images img{
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border-radius: 5em;
+}
+.middle{
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    color: white;
+    font-size: 1.1em;
+}
+.middle button{
+    padding: 1em;
+    background-color: white;
+    width: 10em;
+    border-radius: 1em;
+    font-family: Roboto;
+    border: 1px solid white;
+}
+.middle p{
+    margin-bottom: 1em;
+}
+.First-row-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.sel{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.sel p{
+    margin: auto;
+    margin-bottom: 1em;
+}
+.rules button{
+    padding: 1em;
+    background-color: white;
+    width: 10em;
+    border-radius: 1em;
+    font-family: Roboto;
+    border: 1px solid white;
+}
+.rulescontainer{
+    margin-left: 20px;
+    display: none;
+    background-color: green !important;
+    
+    
+}
+.rulescontainer ul {
+    list-style: square ;
+    color: white;
+}
+ul li::marker {
+    color: yellow; /* Change this color as needed */
+}
+.rulescontainer.show{
+    display: block;
+    width: 15rem;
+}
+.green{
+    background-color: green !important;
+    display: inline-block;
+    position: relative;
+    border: 0px solid white;
+    border-radius: 0.3em;
+    bottom: 3%;
+    left: 81%;
+}
+
+.cancel-btn {
+    visibility: hidden;
+    position: absolute;
+    top: 1px;
+    right: 3px;
+    cursor: pointer;
+    font-size: 1.2em;
+    color: red;
+}
+.rules{
+    color: white;
+    position: fixed;
+    bottom: 5px;
+    right: 13px;
+    border: 3px solid white;
+    width: 8em;
+    height: 3em;
+    font-size: 1em;
+    background-color: #8CC461;
+    border-radius: 1em;
+}
+.green p{
+    font-family: Roboto;
+}
