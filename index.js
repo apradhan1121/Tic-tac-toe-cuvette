@@ -12,11 +12,11 @@ const cancelbtn=document.querySelector(".cancel-btn");
 const green =document.querySelector(".green")
 
 
-function initalizescore(){
-    const youscore=localStorage.getItem("youscore" || 0 );
-    const comscore= localStorage.getItem("comscore" || 0);
-    y_score.innerText=youscore;
-    c_score.innerText=comscore;
+function initalizescore() {
+    const youscore = parseInt(localStorage.getItem("youscore")) || 0;
+    const comscore = parseInt(localStorage.getItem("comscore")) || 0;
+    y_score.innerText = youscore;
+    c_score.innerText = comscore;
 }
 window.addEventListener("DOMContentLoaded",initalizescore);
 
